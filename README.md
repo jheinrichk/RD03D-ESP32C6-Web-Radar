@@ -51,8 +51,6 @@ The `drivers/CH343SER.ZIP` file is included for Windows systems that need the CH
 
 ## WiFi credentials
 
-The published sketch is sanitized and does not include private WiFi credentials.
-
 For local use:
 
 1. Open the `RD03D_ESP32C6_Web_Radar` sketch folder.
@@ -60,8 +58,6 @@ For local use:
 3. Rename the copy to `secrets.h`.
 4. Edit `secrets.h` with your WiFi network name and password.
 5. Upload the sketch.
-
-`secrets.h` is ignored by git and should not be committed.
 
 ## Current features
 
@@ -128,13 +124,11 @@ Open that address from a phone, tablet or computer on the same WiFi network.
 ```text
 .
 ├── RD03D_ESP32C6_Web_Radar/
-│   ├── RD03D_ESP32C6_Web_Radar.ino
-│   └── secrets.example.h
-├── assets/
-│   └── Screenshot 2026-05-15 000924.png
-├── drivers/
-│   └── CH343SER.ZIP
-├── .gitignore
+├── RD03D_ESP32C6_Web_Radar.ino
+├── secrets.example.h
+├── Screenshot 2026-05-15 000924.png
+├── CH343SER.ZIP
+├── gitignore
 ├── LICENSE
 ├── README.md
 └── UPDATE_NOTES.md
@@ -142,7 +136,7 @@ Open that address from a phone, tablet or computer on the same WiFi network.
 
 ## Notes
 
-- This version intentionally omits RF transceiver code.
+
 - The sketch supports up to three RD-03D targets.
-- The IP address may change unless your router assigns a DHCP reservation to the ESP32 C6.
+- The IP address may change unless your router assigns a DHCP reservation to the ESP32 C6.  ESP32 transmits on 2.4 ghz.  On newer routers, activate 2.4 ghz device setup and or UPNP
 - If no radar data appears, confirm the RD-03D TX wire goes to GPIO7 and the RD-03D RX wire goes to GPIO6.
