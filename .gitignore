@@ -1,0 +1,17 @@
+# Local WiFi credentials
+RD03D_ESP32C6_Web_Radar/secrets.h
+secrets.h
+
+# Arduino build output
+build/
+*.elf
+*.bin
+*.map
+*.hex
+*.bak
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
