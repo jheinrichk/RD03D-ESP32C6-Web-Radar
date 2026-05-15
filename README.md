@@ -2,7 +2,7 @@
 
 This project turns an ESP32 C6 and an Ai Thinker RD-03D radar module into a WiFi based live radar viewer. The ESP32 C6 reads target data from the RD-03D over UART, connects to a local WiFi network and serves a browser dashboard showing a 9 meter, 120 degree forward radar sector.
 
-![RD-03D browser radar dashboard](Screenshot 2026-05-15 000924.png)
+![RD-03D browser radar dashboard](Screenshot%202026-05-15%20000924.png)
 
 ## Hardware
 
